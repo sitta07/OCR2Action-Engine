@@ -6,3 +6,5 @@ class GraphState(TypedDict):
     is_valid: bool                 # ผ่านการ Validate Pydantic หรือยัง
     validation_errors: Optional[str] # เก็บ Error เอาไว้วนลูปให้ AI แก้ตัวเอง
     policy_decision: Optional[str]   # ผลตัดสินจาก RAG (Approve/Reject)
+
+# หมายเหตุ: อันนี้คือโครงสร้างของกล่อง State ที่เราจะโยนให้ LangGraph (เหมือนกล่องที่พนักงานแต่ละคนจะหยิบไปใช้) --- IGNORE ---
